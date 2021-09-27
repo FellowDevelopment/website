@@ -1,0 +1,159 @@
+@font-face {
+  src: url("Fonts/JetBrainsMono-Regular.ttf");
+  font-family: Regular;
+} 
+
+.bigger-font{
+  margin-top: 340px;
+  font-size: 120px;
+}
+
+main > p {
+  font-size: 50px;
+}
+
+main, main a{
+  font-family: Regular;
+  text-align: center;
+  color: #ff0000;
+  text-shadow: 4px 1px black;
+}
+
+body {
+  background-color: rgb(34, 33, 33);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 34px;
+  box-sizing: border-box;
+  height: 48px;
+  width: 100%;
+  background: #0d0d0d;
+}
+
+.side-menu-trigger {
+  cursor: pointer;
+  position: absolute;
+  top:5px;
+  border-radius: 5px;
+  border:none;
+  background: none;
+  color: red;
+  font-size: 42px;
+  text-shadow: 1px 1px black;
+  font-family: Regular;
+}
+
+.side-menu-trigger:hover {
+  border-bottom: solid darkred;
+}
+
+.side-menu {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 300px;
+  top: 68px;
+  right: -300px;
+  padding: 0;
+  background: #262626;
+  transition: 0.3s transform ease-in-out;
+}
+.side-menu2 {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 300px;
+  top: 68px;
+  left: -300px;
+  padding: 0;
+  background: #262626;
+  transition: 0.3s transform ease-in-out;
+}
+
+.side-menu ul, .side-menu2 ul {
+  position: absolute;
+  display: flex;
+  height: calc(100% - 20px);
+  flex-wrap: wrap;
+  margin: 0 10px;
+  padding: 0;
+  list-style-type: none;
+  align-content: flex-start
+}
+
+.side-menu ul li, .side-menu2 ul li {
+  display: flex;
+  height: 50px;
+  background: #ffffff;
+  flex-basis: 100%;
+  margin-top: 40px;
+  color: #696e9e;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.side-menu ul li a, .side-menu2 ul li a {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: Regular;
+  background: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
+  transform: translateX(-300px); 
+}
+.side-menu-trigger:focus ~ .side-menu2, .side-menu2:hover {
+  transform: translateX(300px); 
+}
+
+#nesox {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+#szv {
+  width: 300px;
+  height: 300px;
+  float: right;
+}
+
+#description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Regular;
+  color: white;
+}
+
+div {
+  padding: 50px;
+  text-align: center;
+  font-family: Regular;
+  color: red;
+  width:800px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li > a {
+  color: darkred;
+}
